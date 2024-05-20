@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/iKossu/grocery-guru/issues"
   },
-  "homepage": "https://github.com/iKossu/grocery-guru#readme"
+  "homepage": "https://github.com/iKossu/grocery-guru#readme",
+  "devDependencies": {
+    "create-react-app": "^5.0.1"
+  }
 }
