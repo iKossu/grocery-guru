@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import logo from './assets/logo.png';
 
+import { useDispatch } from 'react-redux';
+
+import { addRandomProducts } from './redux/actions';
+
+import ProductList from './components/ProductList';
+
 const App: React.FC = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const count = Math.floor(Math.random() * 6) + 10;
+    dispatch(addRandomProducts(count));
+  }, [dispatch]);
 
   return (
     <div className="container">
@@ -12,6 +24,7 @@ const App: React.FC = () => {
           <h1 className="mb-0 ms-4">Shopping List</h1>
         </div>
       </header>
+      <ProductList />
     </div>
   );
 };
