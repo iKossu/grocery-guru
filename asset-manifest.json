@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d815729.css",
-    "main.js": "/static/js/main.1083e399.js",
-    "static/js/206.bf51703e.chunk.js": "/static/js/206.bf51703e.chunk.js",
-    "static/media/logo.png": "/static/media/logo.b885d7c65ce7fe5e2db6.png",
-    "index.html": "/index.html"
+    "main.css": "https://iKossu.github.com/grocery-guru/static/css/main.6d815729.css",
+    "main.js": "https://iKossu.github.com/grocery-guru/static/js/main.d9cfef54.js",
+    "static/js/206.bf51703e.chunk.js": "https://iKossu.github.com/grocery-guru/static/js/206.bf51703e.chunk.js",
+    "static/media/logo.png": "https://iKossu.github.com/grocery-guru/static/media/logo.b885d7c65ce7fe5e2db6.png",
+    "index.html": "https://iKossu.github.com/grocery-guru/index.html"
   },
   "entrypoints": [
     "static/css/main.6d815729.css",
-    "static/js/main.1083e399.js"
+    "static/js/main.d9cfef54.js"
   ]
 }
