@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import logo from './assets/logo.png';
+
+const App: React.FC = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header className="d-flex mt-5 mb-3">
+        <div className="flex-row align-items-center d-flex">
+          <img src={logo} alt="Shopping List Logo" />
+          <h1 className="mb-0 ms-4">Shopping List</h1>
+        </div>
       </header>
     </div>
   );
-}
+};
 
 export default App;
