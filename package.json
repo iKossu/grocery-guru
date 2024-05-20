@@ -4,6 +4,8 @@
   "description": "A shopping list application.",
   "main": "index.js",
   "scripts": {
+    "predeploy": "cd client/ && npm run build",
+    "deploy": "gh-pages -d client/build",
     "docker:build": "docker-compose -p shopping-list build",
     "docker:up": "docker-compose -p shopping-list up",
     "docker:down": "docker-compose -p shopping-list down",
@@ -19,7 +21,9 @@
   "bugs": {
     "url": "https://github.com/iKossu/grocery-guru/issues"
   },
-  "homepage": "https://github.com/iKossu/grocery-guru#readme",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  },
   "devDependencies": {
     "create-react-app": "^5.0.1"
   }
