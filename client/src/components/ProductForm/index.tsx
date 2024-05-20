@@ -13,6 +13,7 @@ const ProductForm: React.FC<ProductItemProps> = ({ product }) => {
     handleSubmit,
     errors,
     onSubmit,
+    handleChange,
   } = useProductForm(product);
 
   return (
@@ -23,6 +24,7 @@ const ProductForm: React.FC<ProductItemProps> = ({ product }) => {
             type="text"
             placeholder="name"
             {...register('name', { required: 'Name is required.' })}
+            onBlur={handleChange}
             aria-invalid={errors.name ? 'true' : 'false'}
           />
         </div>
@@ -31,6 +33,7 @@ const ProductForm: React.FC<ProductItemProps> = ({ product }) => {
             type="number"
             placeholder="amount"
             {...register('amount', { required: 'Amount must be ≥ 1.', min: 1 })}
+            onBlur={handleChange}
             aria-invalid={errors.amount ? 'true' : 'false'}
           />
         </div>

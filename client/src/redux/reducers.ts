@@ -1,6 +1,7 @@
 import { createReducer } from '@reduxjs/toolkit';
 
 import {
+  updateProduct,
   deleteProduct,
   addRandomProducts,
 } from './actions';
@@ -18,6 +19,10 @@ let nextProductId = 1;
 
 const rootReducer = createReducer(initialState, (builder) => {
   builder
+    .addCase(updateProduct, (state: RootState, action) => {
+      const { id, ...rest } = action.payload;
+      state.products = state.products.map((p) => p.id === id ? { id, ...rest } : p);
+    })
     .addCase(deleteProduct, (state: RootState, action) => {
       state.products = state.products.filter((p) => p.id !== action.payload);
     })
