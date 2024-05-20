@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import { addRandomProducts } from './redux/actions';
 
 import ProductList from './components/ProductList';
+import AddProduct from './components/AddProduct';
 
 const App: React.FC = () => {
   const dispatch = useDispatch();
@@ -25,6 +26,7 @@ const App: React.FC = () => {
         </div>
       </header>
       <ProductList />
+      <AddProduct />
     </div>
   );
 };
